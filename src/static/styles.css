@@ -59,19 +59,111 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #d7defa;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
+  font-size: 1.1rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-description {
+  color: #445;
+}
+
+.availability-row {
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #e3e8fb;
+}
+
+.participants-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1a237e;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #24324d;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: #eef3ff;
+}
+
+.participant-item:last-child {
+  margin-bottom: 0;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 999px;
+  background-color: #fff;
+  border: 1px solid #d8dff8;
+  color: #c62828;
+  box-shadow: none;
+  flex-shrink: 0;
+}
+
+.participant-remove svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.participant-remove:hover {
+  background-color: #fff1f1;
+  border-color: #ef9a9a;
+}
+
+.participant-remove:focus-visible {
+  outline: 3px solid rgba(57, 73, 171, 0.2);
+  outline-offset: 2px;
+}
+
+.participants-empty {
+  margin-bottom: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: #eef3ff;
+  color: #4b5d8a;
+  font-style: italic;
 }
 
 .form-group {
